@@ -18,10 +18,10 @@ body {
   );
 
   line-height: 1;
-  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 .container {
   max-width: 130rem;
@@ -38,6 +38,7 @@ html {
   align-items: center;
   padding-top: 1.2rem;
   margin-bottom: 3.2rem;
+  position: relative;
 }
 .logo {
   height: 6.2rem;
@@ -448,15 +449,15 @@ html {
   display: none;
 }
 
-/* Mobile Navigation */
-@media all and (max-width: 1186px) {
+@media (max-width: 1037px) {
   .mobile-nav {
     display: block;
-    z-index: 9999;
+    /* z-index: 9999; */
   }
   .nav-list {
     background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
+    backdrop-filter: blur(10px);
     top: 0;
     left: 0;
     width: 100%;
@@ -467,7 +468,10 @@ html {
     flex-direction: column;
     gap: 4rem;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
+    /* pointer-events: none; */
+    visibility: none;
+    transform: translateX(100%);
   }
   .nav-open .menu-icon[name="close"] {
     display: block;
@@ -477,6 +481,9 @@ html {
   }
   .nav-open .nav-list {
     opacity: 1;
+    /* pointer-events: auto; */
+    visibility: visible;
+    transform: translateX(0);
   }
   .list-items:active,
   .list-items:visited,

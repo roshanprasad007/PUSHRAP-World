@@ -45,8 +45,7 @@
           <li><a class="list-items" href="#products">Products</a></li>
           <li><a class="list-items" href="#reviews">Reviews</a></li>
           <li><a class="list-items" href="#gallery">Gallery</a></li>
-          <li><a class="list-items" href="#">Shop</a></li>
-          <li><a class="list-items" href="#">Contact</a></li>
+          <li><a class="list-items" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="user-cart">
@@ -272,7 +271,7 @@
       </section>
 
       <!-- Gallery Section -->
-      <div class="gallery1">
+      <div class="gallery1" id="gallery">
         <section class="gallery" id="gallery">
           <div class="container">
             <h3 class="gallery-section-title">Gallery</h3>
@@ -349,7 +348,7 @@
       </div>
     </main>
     <footer>
-      <section class="footer-section">
+      <section class="footer-section" id="contact">
         <div class="container">
           <h5 class="footer-title">Contact Us</h5>
         </div>
@@ -434,6 +433,13 @@
 
       btnNavEl.addEventListener("click", function () {
         headerEl.classList.toggle("nav-open");
+      });
+      const navLinks = document.querySelectorAll(".nav-links .list-items");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          headerEl.classList.remove("nav-open"); // Close the menu
+        });
       });
     </script>
   </body>
