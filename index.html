@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUSHRAP Store</title>
+    <link rel="icon" href="logo icon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <section class="navigation">
+        <img src="logo icon1.png" alt="Shote store logo" class="logo" />
+        <h1 class="title">PUSHR<span class="ap">ap</span></h1>
+      </section>
+      <nav class="mobile-nav-1">
+        <ul class="nav-list nav-links">
+          <li><a class="list-items" href="#">Home</a></li>
+          <li><a class="list-items" href="#products">Products</a></li>
+          <li><a class="list-items" href="#reviews">Reviews</a></li>
+          <li><a class="list-items" href="#gallery">Gallery</a></li>
+          <li><a class="list-items" href="#">Shop</a></li>
+          <li><a class="list-items" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-cart">
+        <div><ion-icon class="user-logo" name="search-outline"></ion-icon></div>
+        <div>
+          <ion-icon class="user-logo" name="cart-outline"></ion-icon
+          ><span class="cart-number">0</span>
+        </div>
+        <img
+          src="unsplash_hh3ViD0r0Rc.png"
+          alt="Profile Picture of the user"
+          class="user-img"
+        />
+      </div>
+      <button class="mobile-nav">
+        <ion-icon name="menu" class="menu-icon"></ion-icon>
+        <ion-icon name="close" class="menu-icon blackC"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="hero">
+          <div class="text-box">
+            <h1 class="heading-primary">
+              Purchase your <span class="underline">shoes</span> now.
+            </h1>
+            <p class="hero-description">
+              PushRap shoes are well designed. They are very comfortable for all
+              ages, and our shoes are the most popular shoes in the last year.
+              We are very happy to announce that we will release our new shoe
+              very soooooon.
+            </p>
+            <div class="center-btn">
+              <a href="#" class="btn">Show Now</a>
+            </div>
+          </div>
+
+          <div class="img-box">
+            <img src="Img/Main Shoe.webp" alt="" class="hero-img" />
+            <!-- <img src="/Ellipse 24.png" class="arrow" /> -->
+          </div>
+        </div>
+      </section>
+
+      <section section class="products" id="products">
+        <div class="container">
+          <h2 class="section-title">popular Products</h2>
+        </div>
+
+        <div class="container grid1 grid--4-cols">
+          <div class="products-img">
+            <img
+              src="Popular images/popular 1.webp"
+              alt=""
+              class="shoe-image"
+            />
+
+            <div class="shoe-des">
+              <div class="product-review">
+                <ion-icon name="star" class="star"></ion-icon>
+                <p class="review">(11.6K Reviews)</p>
+              </div>
+
+              <p class="shoe-title">Nike Running Shoe</p>
+              <div class="pricing">
+                <p class="price">$100</p>
+                <p class="old-price">
+                  <del>500-</del><span class="strike">Sold Out</span>
+                </p>
+                <a href="#" class="btn1">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="products-img">
+            <img
+              src="Popular images/popular 2.webp"
+              alt=""
+              class="shoe-image"
+            />
+
+            <div class="shoe-des">
+              <div class="product-review">
+                <ion-icon name="star" class="star"></ion-icon>
+                <p class="review">(11.6K Reviews)</p>
+              </div>
+
+              <p class="shoe-title">Nike Shoe Airmax</p>
+              <div class="pricing">
+                <p class="price">$115</p>
+                <p class="old-price">
+                  <del>100-</del><span class="strike">Sold Out</span>
+                </p>
+                <a href="#" class="btn1">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="products-img">
+            <img
+              src="Popular images/popular 3.webp"
+              alt=""
+              class="shoe-image"
+            />
+
+            <div class="shoe-des">
+              <div class="product-review">
+                <ion-icon name="star" class="star"></ion-icon>
+                <p class="review">(11.6K Reviews)</p>
+              </div>
+
+              <p class="shoe-title">Jordan Sneaker</p>
+              <div class="pricing">
+                <p class="price">$50</p>
+                <p class="old-price">
+                  <del>1500-</del><span class="strike">Sold Out</span>
+                </p>
+                <a href="#" class="btn1">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="products-img">
+            <img
+              src="Popular images/popular 4.webp"
+              alt=""
+              class="shoe-image"
+            />
+
+            <div class="shoe-des">
+              <div class="product-review">
+                <ion-icon name="star" class="star"></ion-icon>
+                <p class="review">(11.6K Reviews)</p>
+              </div>
+
+              <p class="shoe-title">Nike Running Shoe 2</p>
+              <div class="pricing">
+                <p class="price">$220</p>
+                <p class="old-price">
+                  <del>210-</del><span class="strike">Sold Out</span>
+                </p>
+                <a href="#" class="btn1">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-section" id="reviews">
+        <div class="container">
+          <h3 class="cust-review">Customer Reviews</h3>
+        </div>
+
+        <div class="container grid2 grid--2-cols">
+          <div class="reviews">
+            <div class="review-img">
+              <img
+                src="Testmonials/MD Metri.webp"
+                alt="reviewer-picture"
+                class="reviewer-pic"
+              />
+            </div>
+            <div class="review-des">
+              <p class="reviewer-name">MD Metri</p>
+              <p class="reviewer-prof">Fashion Infulencer</p>
+              <p class="reviewer-des">
+                PushRap shows are super stylized and suitable for all ages. All
+                their shows are at unbeatable and reasonable prices as well.
+              </p>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="review-img">
+              <img
+                src="Testmonials/Michael Dam.webp"
+                alt="reviewer-picture"
+                class="reviewer-pic"
+              />
+            </div>
+            <div class="review-des">
+              <p class="reviewer-name">Michael Dam</p>
+              <p class="reviewer-prof">Verified User</p>
+              <p class="reviewer-des">
+                I brought many shoes from the PushRap store. They provide very
+                good quality at a reasonable price.
+              </p>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="review-img">
+              <img
+                src="Testmonials/Matheus Ferrero.webp"
+                alt="reviewer-picture"
+                class="reviewer-pic"
+              />
+            </div>
+            <div class="review-des">
+              <p class="reviewer-name">Matheus Ferrero</p>
+              <p class="reviewer-prof">Product Designer</p>
+              <p class="reviewer-des">
+                It's a great pleasure to have your appreciation of my designs,
+                and I'm looking forward to giving you more and more special
+                designs in the future.
+              </p>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="review-img">
+              <img
+                src="Testmonials/Arjun.webp"
+                alt="reviewer-picture"
+                class="reviewer-pic"
+              />
+            </div>
+            <div class="review-des">
+              <p class="reviewer-name">Arjun</p>
+              <p class="reviewer-prof">Company agent </p>
+              <p class="reviewer-des">
+                Those great products in that category provide great quality and
+                a better price. We get many orders from the existing customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <div class="gallery1">
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <h3 class="gallery-section-title">Gallery</h3>
+          </div>
+        </section>
+
+        <!-- Gallerys -->
+        <section class="gallery-section">
+          <div class="new-collection-container">
+            <span class="subheading">New Collection</span>
+            <div class="new-collection">
+              <figure class="gallery-pic">
+                <img src="Gallery/New1.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New2.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New3.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New4.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New5.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New6.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New7.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New8.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/New9.webp" alt="" class="high-rated-shoe" />
+              </figure>
+            </div>
+          </div>
+          <div class="new-collection-container">
+            <span class="subheading">Top Collection</span>
+            <div class="new-collection">
+              <figure class="gallery-pic">
+                <img src="Gallery/Top1.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top2.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top3.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top4.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top5.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top6.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top7.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top8.webp" alt="" class="high-rated-shoe" />
+              </figure>
+              <figure class="gallery-pic">
+                <img src="Gallery/Top9.webp" alt="" class="high-rated-shoe" />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-section">
+        <div class="container">
+          <h5 class="footer-title">Contact Us</h5>
+        </div>
+
+        <div class="container grid3 grid--3-cols">
+          <div class="cont-section">
+            <div><p class="about">About</p></div>
+
+            <div>
+              <ul class="about-list">
+                <li><a href="" class="about-list-item">Contact Us</a></li>
+                <li><a href="" class="about-list-item">About us</a></li>
+                <li><a href="" class="about-list-item">Carrers</a></li>
+                <li><a href="" class="about-list-item">PushRap Services</a></li>
+                <li><a href="" class="about-list-item">PushRap Stores</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cont-section">
+            <div>
+              <p class="about">Help</p>
+            </div>
+            <div>
+              <ul class="about-list">
+                <li><a href="" class="about-list-item">Payments</a></li>
+                <li><a href="" class="about-list-item">Shipping</a></li>
+                <li>
+                  <a href="" class="about-list-item">Cancellation & Returns</a>
+                </li>
+                <li><a href="" class="about-list-item">FAQ</a></li>
+                <li><a href="" class="about-list-item">Customer Service</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cont-section">
+            <div>
+              <p class="about">Social Media</p>
+            </div>
+            <div>
+              <ul class="about-list icons">
+                <li>
+                  <a href="" class="about-list-item"
+                    ><ion-icon
+                      name="logo-facebook"
+                      class="footer-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="about-list-item"
+                    ><ion-icon
+                      name="logo-instagram"
+                      class="footer-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="about-list-item"
+                    ><ion-icon
+                      name="logo-twitter"
+                      class="footer-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="about-list-item"
+                    ><ion-icon
+                      name="logo-snapchat"
+                      class="footer-icon"
+                    ></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+      const btnNavEl = document.querySelector(".mobile-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>
